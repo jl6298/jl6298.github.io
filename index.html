@@ -156,7 +156,9 @@
 				checkboxContainer.remove();
 				d3.select('#soups')
 				.text("谢谢nan老师！！");
-				button.style("visibility", "visible");
+
+				button.style("visibility", "visible")
+				.style("position", "static");
 			}
 		});
 
@@ -166,7 +168,9 @@
 				checkboxContainer.remove();
 				d3.select('#soups')
 				.text("气死，老子写了这么久。");
-				button.style("visibility", "visible");
+
+				button.style("visibility", "visible")
+				.style("position", "static");
 			}
 		});
 		button.on("click", function() {
