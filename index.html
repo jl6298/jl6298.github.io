@@ -157,7 +157,8 @@
 				d3.select('#soups')
 				.text("谢谢nan老师！！");
 
-				button.style("visibility", "visible");
+				button.style("visibility", "visible")
+				.style("position", "static");
 			}
 		});
 
@@ -168,7 +169,8 @@
 				d3.select('#soups')
 				.text("气死，老子写了这么久。");
 
-				button.style("visibility", "visible");
+				button.style("visibility", "visible")
+				.style("position", "static");
 			}
 		});
 		button.on("click", function() {
@@ -222,8 +224,7 @@
 				.text("oopsyyyyyyyy!!!!!!!");
 				index = index + 1;
 			} else if (index == 4) {
-				button.transition()
-      			.duration(1000)
+				button
 				.style("top","480px")
     			.style("left","150px")
 				.style("visibility", "hidden")
